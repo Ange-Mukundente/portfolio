@@ -55,4 +55,19 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
+//Contact Form
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.querySelector('.contact__form');
+
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Display a pop-up message
+        alert('Thank you for your message! We will get back to you soon.');
+
+        // Reset the form after submission
+        contactForm.reset();
+    });
+});
+
 
