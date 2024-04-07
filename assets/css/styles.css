@@ -493,8 +493,14 @@ img {
 }
 
 .footer__copy {
-  font-size: var(--smaller-font-size);
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #343a40;
+  text-align: center;
 }
+
 
 /*Responsiveness*/
 @media screen and (max-width: 320px) {
